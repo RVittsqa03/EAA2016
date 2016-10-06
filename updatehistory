@@ -1,0 +1,867 @@
+[eaauser@localhost ~]$ pwd
+/home/eaauser
+[eaauser@localhost ~]$ ls -;l
+ls: cannot access -: No such file or directory
+bash: l: command not found...
+[eaauser@localhost ~]$ ls -l
+total 44
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+-rw-rw-r--.  1 eaauser eaauser  307 Sep 29 10:58 script
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ ls -l
+total 48
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rw-rw-r--.  1 eaauser eaauser  307 Oct  6 08:53 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+-rw-rw-r--.  1 eaauser eaauser  307 Sep 29 10:58 script
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ rm -rf scr*
+[eaauser@localhost ~]$ ls -l
+total 44
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rw-rw-r--.  1 eaauser eaauser  307 Oct  6 08:53 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ chmod +x fscript.sh
+[eaauser@localhost ~]$ ls -l
+total 44
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  307 Oct  6 08:53 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ ./fscript.sh one two three
+You entered 3 parameters:
+one two three
+is this correct?
+[eaauser@localhost ~]$ ls -l
+total 44
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  311 Oct  6 08:54 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ ./fscript.sh
+[eaauser@localhost ~]$ ls -l
+total 44
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 08:55 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  311 Oct  6 08:54 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ cd Doc*
+[eaauser@localhost Documents]$ pwd
+/home/eaauser/Documents
+[eaauser@localhost Documents]$ ls -l
+total 4
+-rw-rw-r--. 1 eaauser eaauser 3 Oct  6 08:55 audit.txt
+[eaauser@localhost Documents]$ rm -rf au*
+[eaauser@localhost Documents]$ ls -l
+total 0
+[eaauser@localhost Documents]$ cd ..
+[eaauser@localhost ~]$ pwd
+/home/eaauser
+[eaauser@localhost ~]$ ./fscript.sh first second third
+[eaauser@localhost ~]$ ls -l
+total 44
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 08:58 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  311 Oct  6 08:54 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ cd Documents
+[eaauser@localhost Documents]$ ls -l
+total 4
+-rw-rw-r--. 1 eaauser eaauser 19 Oct  6 08:58 audit.txt
+[eaauser@localhost Documents]$ cd 
+[eaauser@localhost ~]$ pwd
+/home/eaauser
+[eaauser@localhost ~]$ ls -l
+total 44
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 08:58 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  376 Oct  6 09:04 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ ./fscript.sh
+[eaauser@localhost ~]$ cd Documents
+[eaauser@localhost Documents]$ pwd
+/home/eaauser/Documents
+[eaauser@localhost Documents]$ ls -l
+total 8
+-rw-rw-r--. 1 eaauser eaauser 20 Oct  6 09:04 audit1.txt
+-rw-rw-r--. 1 eaauser eaauser 19 Oct  6 08:58 audit.txt
+[eaauser@localhost Documents]$ cd
+[eaauser@localhost ~]$ pwd
+/home/eaauser
+[eaauser@localhost ~]$ ls -l
+total 44
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  396 Oct  6 09:06 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ cd Documents
+[eaauser@localhost Documents]$ cd ..
+[eaauser@localhost ~]$ pwd
+/home/eaauser
+[eaauser@localhost ~]$ ls -l
+total 44
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  435 Oct  6 09:21 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ ./fscript.sh Backup
+./fscript.sh: line 21: /home/eaauser/Documents: Is a directory
+[eaauser@localhost ~]$ ./fscript.sh Backup
+mkdir: cannot create directory ‘Backup’: File exists
+/home/eaauser/Documents/Backup
+[eaauser@localhost ~]$ cd ..
+[eaauser@localhost home]$ pwd
+/home
+[eaauser@localhost home]$ cd eaa*
+[eaauser@localhost ~]$ pwd
+/home/eaauser
+[eaauser@localhost ~]$ ls -l
+total 48
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:21 Backup
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  432 Oct  6 09:22 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ rm -rf Back*
+[eaauser@localhost ~]$ ls -l
+total 44
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  432 Oct  6 09:22 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ ./fscript.sh Backup
+/home/eaauser/Documents/Backup
+[eaauser@localhost ~]$ pwd
+/home/eaauser
+[eaauser@localhost ~]$ ls -lt
+total 48
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:24 Backup
+-rwxrwxr-x.  1 eaauser eaauser  432 Oct  6 09:22 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 09:04 Documents
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+[eaauser@localhost ~]$ cd Documents
+[eaauser@localhost Documents]$ ls -l
+total 8
+-rw-rw-r--. 1 eaauser eaauser 20 Oct  6 09:04 audit1.txt
+-rw-rw-r--. 1 eaauser eaauser 19 Oct  6 08:58 audit.txt
+[eaauser@localhost Documents]$ cd
+[eaauser@localhost ~]$ pwd
+/home/eaauser
+[eaauser@localhost ~]$ ls -l
+total 48
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:24 Backup
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  432 Oct  6 09:22 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ cd Back*
+[eaauser@localhost Backup]$ ls -l
+total 0
+[eaauser@localhost Backup]$ cd ..
+[eaauser@localhost ~]$ ls -l
+total 48
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:24 Backup
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  432 Oct  6 09:22 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ rm -rf Ba*
+[eaauser@localhost ~]$ ls -l
+total 44
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  432 Oct  6 09:22 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ ./fscript.sh Backup
+/home/eaauser/eaauser/Documents/Backup
+[eaauser@localhost ~]$ ls -l
+total 48
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:27 Backup
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  438 Oct  6 09:27 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ rm -rf Bac*
+[eaauser@localhost ~]$ ls -l
+total 44
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  438 Oct  6 09:27 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ ./secscript.sh
+bash: ./secscript.sh: Permission denied
+[eaauser@localhost ~]$ ls -l
+total 48
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  441 Oct  6 09:37 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+-rw-rw-r--.  1 eaauser eaauser   27 Oct  6 09:38 secscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ chmod +x secscript.sh
+[eaauser@localhost ~]$ ls -l
+total 48
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  441 Oct  6 09:37 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+-rwxrwxr-x.  1 eaauser eaauser   27 Oct  6 09:38 secscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ ./secscript.sh
+[eaauser@localhost ~]$ ls -l
+total 52
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:39 Backup
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  441 Oct  6 09:37 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+-rwxrwxr-x.  1 eaauser eaauser   27 Oct  6 09:38 secscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ cd B*
+[eaauser@localhost Backup]$ ls -l
+total 0
+[eaauser@localhost Backup]$ pwd
+/home/eaauser/Backup
+[eaauser@localhost Backup]$ date +"%d%m%Y_%H%M%S"
+06102016_094520
+[eaauser@localhost Backup]$ date +"%d%m%Y_%H%M%S"
+06102016_094545
+[eaauser@localhost Backup]$ date +"%d%m%Y_%H%M%S"
+06102016_094652
+[eaauser@localhost Backup]$ ls -l
+total 0
+[eaauser@localhost Backup]$ pwd
+/home/eaauser/Backup
+[eaauser@localhost Backup]$ cd ..
+[eaauser@localhost ~]$ pwd
+/home/eaauser
+[eaauser@localhost ~]$ ls -l
+total 52
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:39 Backup
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  441 Oct  6 09:37 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+-rwxrwxr-x.  1 eaauser eaauser   82 Oct  6 09:48 secscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ mkdir backup_`date +%F`
+[eaauser@localhost ~]$ ls
+Backup             Documents   Music       Public        Test
+backup_2016-10-06  Downloads   nifi-0.4.1  secscript.sh  Videos
+Desktop            fscript.sh  Pictures    Templates
+[eaauser@localhost ~]$ ls -l
+total 56
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:39 Backup
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:53 backup_2016-10-06
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  441 Oct  6 09:37 fscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+-rwxrwxr-x.  1 eaauser eaauser   82 Oct  6 09:48 secscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ man date
+[eaauser@localhost ~]$ mkdir backup_`date +%c`
+[eaauser@localhost ~]$ ls -l
+total 80
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:54 06
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:54 09:54:53
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:54 2016
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:39 Backup
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:53 backup_2016-10-06
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:54 backup_Thu
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser 4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser  441 Oct  6 09:37 fscript.sh
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:54 IST
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser 4096 Jan 17  2016 nifi-0.4.1
+drwxrwxr-x.  2 eaauser eaauser 4096 Oct  6 09:54 Oct
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Public
+-rwxrwxr-x.  1 eaauser eaauser   82 Oct  6 09:48 secscript.sh
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser 4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser 4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ pwd
+/home/eaauser
+[eaauser@localhost ~]$ pwd
+/home/eaauser
+[eaauser@localhost ~]$ su -
+Password: 
+su: Authentication failure
+[eaauser@localhost ~]$ su -
+Password: 
+[root@localhost ~]# gedit /etc/cntlm.conf
+
+(gedit:2899): Gtk-WARNING **: Calling Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+
+** (gedit:2899): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-spell-enabled not supported
+
+** (gedit:2899): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+    
+
+
+** (gedit:2899): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-spell-enabled not supported
+
+** (gedit:2899): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:2899): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-spell-enabled not supported
+
+** (gedit:2899): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:2899): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cntlm -H
+Password: 
+PassLM          F25FA2D26B90EC89552C4BCA4AEBFB11
+PassNT          7089D1C2AF40ABF53541DD24ABA05E03
+PassNTLMv2      0967A2C5B7871F68B9D23E3C796D1123    # Only for user 'x00114375', domain 'stu'
+[root@localhost ~]# gedit /etc/cntlm.conf
+
+(gedit:2953): Gtk-WARNING **: Calling Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+
+** (gedit:2953): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-spell-enabled not supported
+
+** (gedit:2953): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:2953): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+[root@localhost ~]# cntlm -c /etc/cntlm.conf 
+[root@localhost ~]# logout
+[eaauser@localhost ~]$ export http_proxy=http://localhost:3128
+[eaauser@localhost ~]$ wget www.abc.com
+--2016-10-06 10:25:03--  http://www.abc.com/
+Resolving localhost (localhost)... 127.0.0.1
+Connecting to localhost (localhost)|127.0.0.1|:3128... connected.
+Proxy request sent, awaiting response... 301 Moved Permanently
+Location: http://abc.go.com/ [following]
+--2016-10-06 10:25:03--  http://abc.go.com/
+Reusing existing connection to localhost:3128.
+Proxy request sent, awaiting response... 200 OK
+Length: 193289 (189K) [text/html]
+Saving to: ‘index.html’
+
+index.html          100%[=====================>] 188.76K  --.-KB/s   in 0.06s  
+
+2016-10-06 10:25:03 (3.26 MB/s) - ‘index.html’ saved [193289/193289]
+
+[eaauser@localhost ~]$ export GIT_NO_SSL_VERIFY=1
+[eaauser@localhost ~]$ ls -l
+total 272
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:54 06
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:54 09:54:53
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:54 2016
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:39 Backup
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:53 backup_2016-10-06
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:54 backup_Thu
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser   4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser    441 Oct  6 09:37 fscript.sh
+-rw-rw-r--.  1 eaauser eaauser 193289 Oct  6 10:17 index.html
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:54 IST
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser   4096 Jan 17  2016 nifi-0.4.1
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:54 Oct
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Public
+-rwxrwxr-x.  1 eaauser eaauser     82 Oct  6 09:48 secscript.sh
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser   4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ rm -rf 06
+[eaauser@localhost ~]$ rm -rf 09:54*
+[eaauser@localhost ~]$ rm -rf 2016
+[eaauser@localhost ~]$ ls -l
+total 260
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:39 Backup
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:53 backup_2016-10-06
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:54 backup_Thu
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser   4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Downloads
+-rwxrwxr-x.  1 eaauser eaauser    441 Oct  6 09:37 fscript.sh
+-rw-rw-r--.  1 eaauser eaauser 193289 Oct  6 10:17 index.html
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:54 IST
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser   4096 Jan 17  2016 nifi-0.4.1
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:54 Oct
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Public
+-rwxrwxr-x.  1 eaauser eaauser     82 Oct  6 09:48 secscript.sh
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser   4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ su -
+Password: 
+[root@localhost ~]# logout
+[eaauser@localhost ~]$ history | grep export
+  174  export http_proxy=http://localhost:3128
+  176  export GIT_NO_SSL_VERIFY=1
+  183  history | grep export
+[eaauser@localhost ~]$ !174
+export http_proxy=http://localhost:3128
+[eaauser@localhost ~]$ export GIT_NO_SSL_VERIFY=1
+[eaauser@localhost ~]$ git clone PassLM          F25FA2D26B90EC89552C4BCA4AEBFB11
+fatal: repository 'PassLM' does not exist
+[eaauser@localhost ~]$ PassNT          7089D1C2AF40ABF53541DD24ABA05E03
+bash: PassNT: command not found...
+[eaauser@localhost ~]$ PassNTLMv2      0967A2C5B7871F68B9D23E3C796D1123    # Only for user 'x00114375', domain 'stu'
+bash: PassNTLMv2: command not found...
+[eaauser@localhost ~]$ git clone https://github.com/RVittsqa03/EAA2016.git
+Cloning into 'EAA2016'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+[eaauser@localhost ~]$ pwd
+/home/eaauser
+[eaauser@localhost ~]$ ls -l
+total 264
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:39 Backup
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:53 backup_2016-10-06
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:54 backup_Thu
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Desktop
+drwxr-xr-x.  2 eaauser eaauser   4096 Oct  6 09:04 Documents
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Downloads
+drwxrwxr-x.  3 eaauser eaauser   4096 Oct  6 10:46 EAA2016
+-rwxrwxr-x.  1 eaauser eaauser    441 Oct  6 09:37 fscript.sh
+-rw-rw-r--.  1 eaauser eaauser 193289 Oct  6 10:17 index.html
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:54 IST
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Music
+drwxrwxr-x. 12 eaauser eaauser   4096 Jan 17  2016 nifi-0.4.1
+drwxrwxr-x.  2 eaauser eaauser   4096 Oct  6 09:54 Oct
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Pictures
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Public
+-rwxrwxr-x.  1 eaauser eaauser     82 Oct  6 09:48 secscript.sh
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Templates
+drwxrwxr-x.  2 eaauser eaauser   4096 Sep 29 09:38 Test
+drwxr-xr-x.  2 eaauser eaauser   4096 Jan 20  2016 Videos
+[eaauser@localhost ~]$ cd EAA*
+[eaauser@localhost EAA2016]$ mkdir week1 week2 week3
+[eaauser@localhost EAA2016]$ ls
+README.md  week1  week2  week3
+[eaauser@localhost EAA2016]$ history
+    1  pwd
+    2  ls -l
+    3  cd nifi-0.4.1/
+    4  cd bin/
+    5  ./nifi.sh start
+    6  ps
+    7  cd ../logs/
+    8  ls -ltr
+    9  tail -f nifi-bootstrap.log
+   10  pwd
+   11  ls
+   12  ls ../
+   13  su -
+   14  java
+   15  ls
+   16  su -
+   17  ls
+   18  cd nifi-0.4.1/
+   19  ls
+   20  cd bin/
+   21  ls
+   22  ./nifi.sh start
+   23  ps
+   24  ./nifi.sh restart
+   25  ps
+   26  cd ../logs/
+   27  ls -ltr
+   28  more nifi-bootstrap.log
+   29  su -
+   30  pwd
+   31  cd ../bin/
+   32  ls
+   33  ./nifi.sh start
+   34  ps
+   35  ./nifi.sh start
+   36  ls
+   37  cd ..
+   38  ls
+   39  cd con
+   40  cd conf/
+   41  ls
+   42  vi nifi.properties
+   43  cd -
+   44  cd bin/
+   45  ./nifi.sh start
+   46  ./nifi.sh stop
+   47  su - 
+   48  ls -ltr
+   49  tail -f nifi-bootstrap
+   50  tail -f nifi-bootstrap.log 
+   51  cd
+   52  echo $USER
+   53  echo $HOME
+   54  su -
+   55  logout
+   56  q
+   57  echo $USER
+   58  echo $HOME
+   59  su -
+   60  quit
+   61  exit
+   62  man echo
+   63  ls -l
+   64  mkdir Test
+   65  cd Tes*
+   66  mkdir Test/Test1 Test/Test2
+   67  exit
+   68  ls -l
+   69  cd T
+   70  cd Test
+   71  ls -l
+   72  cd 
+   73  ls -l
+   74  more script
+   75  ls -l
+   76  more script
+   77  ls -l
+   78  more script
+   79  more Documents
+   80  ls -l
+   81  cd T
+   82  cd Test/
+   83  ls -l
+   84  cd 
+   85  ls -l
+   86  cd Documents/
+   87  ls -l
+   88  exit
+   89  pwd
+   90  ls -;l
+   91  ls -l
+   92  rm -rf scr*
+   93  ls -l
+   94  chmod +x fscript.sh
+   95  ls -l
+   96  ./fscript.sh one two three
+   97  ls -l
+   98  ./fscript.sh
+   99  ls -l
+  100  cd Doc*
+  101  pwd
+  102  ls -l
+  103  rm -rf au*
+  104  ls -l
+  105  cd ..
+  106  pwd
+  107  ./fscript.sh first second third
+  108  ls -l
+  109  cd Documents
+  110  ls -l
+  111  cd 
+  112  pwd
+  113  ls -l
+  114  ./fscript.sh
+  115  cd Documents
+  116  pwd
+  117  ls -l
+  118  cd
+  119  pwd
+  120  ls -l
+  121  cd Documents
+  122  cd ..
+  123  pwd
+  124  ls -l
+  125  ./fscript.sh Backup
+  126  cd ..
+  127  pwd
+  128  cd eaa*
+  129  pwd
+  130  ls -l
+  131  rm -rf Back*
+  132  ls -l
+  133  ./fscript.sh Backup
+  134  pwd
+  135  ls -lt
+  136  cd Documents
+  137  ls -l
+  138  cd
+  139  pwd
+  140  ls -l
+  141  cd Back*
+  142  ls -l
+  143  cd ..
+  144  ls -l
+  145  rm -rf Ba*
+  146  ls -l
+  147  ./fscript.sh Backup
+  148  ls -l
+  149  rm -rf Bac*
+  150  ls -l
+  151  ./secscript.sh
+  152  ls -l
+  153  chmod +x secscript.sh
+  154  ls -l
+  155  ./secscript.sh
+  156  ls -l
+  157  cd B*
+  158  ls -l
+  159  pwd
+  160  date +"%d%m%Y_%H%M%S"
+  161  ls -l
+  162  pwd
+  163  cd ..
+  164  pwd
+  165  ls -l
+  166  mkdir backup_`date +%F`
+  167  ls
+  168  ls -l
+  169  man date
+  170  mkdir backup_`date +%c`
+  171  ls -l
+  172  pwd
+  173  su -
+  174  export http_proxy=http://localhost:3128
+  175  wget www.abc.com
+  176  export GIT_NO_SSL_VERIFY=1
+  177  ls -l
+  178  rm -rf 06
+  179  rm -rf 09:54*
+  180  rm -rf 2016
+  181  ls -l
+  182  su -
+  183  history | grep export
+  184  export http_proxy=http://localhost:3128
+  185  export GIT_NO_SSL_VERIFY=1
+  186  git clone PassLM          F25FA2D26B90EC89552C4BCA4AEBFB11
+  187  PassNT          7089D1C2AF40ABF53541DD24ABA05E03
+  188  PassNTLMv2      0967A2C5B7871F68B9D23E3C796D1123    # Only for user 'x00114375', domain 'stu'
+  189  git clone https://github.com/RVittsqa03/EAA2016.git
+  190  pwd
+  191  ls -l
+  192  cd EAA*
+  193  mkdir week1 week2 week3
+  194  ls
+  195  history
+[eaauser@localhost EAA2016]$ 
+[eaauser@localhost EAA2016]$ 
+[eaauser@localhost EAA2016]$ clr
+bash: clr: command not found...
+[eaauser@localhost EAA2016]$ clear
+[3;J
+[eaauser@localhost EAA2016]$ ls
+README.md  week1  week2  week3
+[eaauser@localhost EAA2016]$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+
+[eaauser@localhost EAA2016]$ git add *
+[eaauser@localhost EAA2016]$ git commit 
+[master ef6cdf8] i my first push to the cloud repository
+ 3 files changed, 2 insertions(+)
+ create mode 100644 week2/audit.txt
+ create mode 100644 week2/audit1.txt
+ create mode 100644 week3/codeshistory
+[eaauser@localhost EAA2016]$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 7, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 504 bytes | 0 bytes/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To https://github.com/RVittsqa03/EAA2016.git
+   fb7e141..ef6cdf8  master -> master
+[eaauser@localhost EAA2016]$ ^C
+[eaauser@localhost EAA2016]$ ^C
+[eaauser@localhost EAA2016]$ 
+
